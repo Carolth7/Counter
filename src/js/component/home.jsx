@@ -1,25 +1,29 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Counter from "./Counter.jsx";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 const Home = () => {
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+		<>
+			<h1>Counter</h1>
+			<div className="containerWhite">
+				<div className="bordercontainer">
+					<div className="container">
+						<span className="seconds">
+							<Counter start={0} time={100000} />
+						</span>
+						:
+						<div className="minutes">
+							<Counter start={0} time={10000} />
+						</div>
+						:
+						<div className="minutes">
+							<Counter start={0} time={1000} />
+						</div>
+					</div>
+				</div>
+			</div>
+			<h2>&#x1f64c; Carolth7</h2>
+		</>
 	);
 };
 
