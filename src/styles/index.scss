@@ -10,8 +10,7 @@ body {
     transform:translate(-50%,-50%);
 
 }
-
-.containerWhite {
+.containerOnLeft {
     background-color: white;
     width: 20rem;
     height: 12rem;
@@ -21,9 +20,54 @@ body {
     display: flex;
     justify-content: center;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.322);
-    
+  
 
 }
+
+.containerOnRight {
+    background-color: rgb(21, 216, 216);
+    width: 20rem;
+    height: 12rem;
+    border-radius: 3rem;
+    margin-top: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.322);
+  
+
+}
+
+.containerDownLeft{
+    background-color: yellow;
+    width: 20rem;
+    height: 12rem;
+    border-radius: 3rem;
+    margin-top: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.322);
+  
+
+}
+
+.containerDownRight{
+    background-color: rgb(40, 21, 216);
+    width: 20rem;
+    height: 12rem;
+    border-radius: 3rem;
+    margin-top: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.322);
+  
+
+}
+
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -73,3 +117,33 @@ h2 {
     margin-top: 3rem; 
     
 }
+
+.col-6 {
+    padding:0px;
+}
+
+.leftOn {
+    display: flex;
+    height: 25rem;
+    background-color: blue;
+}
+
+.leftRight {
+    display: flex;
+    height: 25rem;
+    background-color: yellow;
+    
+}
+
+.leftDown {
+    display: flex;
+    height: 25rem;
+    background-color: rgb(255, 0, 170);
+}
+
+.rightDown {
+    display: flex;
+    height: 25rem;
+    background-color: rgb(0, 225, 255);
+}
+
